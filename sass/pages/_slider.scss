@@ -1,0 +1,257 @@
+.slider-section {
+  background-color: $color-blue-dark;
+}
+
+.slider__wrapper {
+  padding-top: 100px;
+
+  padding-bottom: 93px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.slider__heading-box {
+  display: flex;
+  margin-bottom: 73px;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.slider__heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: $color-white;
+  margin-right: 262px;
+  @media only screen and (max-width: 1200px) {
+    margin-right: 100px;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 900px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.arrows-box {
+  display: flex;
+  margin-top: auto;
+  margin-left: 60px;
+  @media only screen and (max-width: 768px) {
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+  }
+  @media only screen and (max-width: 600px) {
+    justify-content: space-between;
+    width: 70%;
+  }
+}
+
+.left-arrow {
+  margin-right: 28px;
+  max-width: 100%;
+  cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+.right-arrow {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 100%;
+  transition: all 1s ease;
+}
+.arrow-two {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.arrow:hover,
+.arrow:focus {
+  filter: drop-shadow(2px 3px 10px $color-green);
+  transform: translateX(-15px);
+}
+.arrow-two:hover,
+.arrow-two:focus {
+  filter: drop-shadow(2px 3px 10px $color-green);
+  transform: translateX(15px);
+}
+
+.slider__slides {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  width: 300%;
+  display: flex;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+.slider__cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  margin: 0 25px;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.card:hover,
+.card:focus {
+  background-color: $color-green;
+}
+
+.card--one {
+  width: 350px;
+  height: 322px;
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+    height: 60%;
+  }
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    height: 60%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card--two {
+  width: 350px;
+  height: 394px;
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+    height: 60%;
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card--three {
+  width: 350px;
+  height: 358px;
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+    height: 60%;
+  }
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.card__content {
+  padding: 40px;
+  justify-content: left;
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.card__p {
+  color: $color-black;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 40px;
+  //   margin-top: 40px;
+  transition: all 0.3s ease;
+  @media only screen and (max-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.card__p:hover {
+  color: $color-white;
+  text-shadow: 1px 2px 1px $color-black;
+}
+
+.user {
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+}
+
+.user__img-box {
+  max-width: 100%;
+  margin-right: 16px;
+}
+.user__img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.user__name {
+  display: flex;
+  flex-direction: column;
+}
+.full-name {
+  margin-bottom: 6px;
+  color: $color-black;
+  font-size: 16px;
+  nav-down: 700;
+  line-height: 32px;
+  transition: all 0.3s ease;
+}
+.full-name:hover {
+  color: $color-white;
+  text-shadow: 1px 2px 1px $color-black;
+}
+
+.job {
+  color: $color-blue-dark;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+
+  transition: all 0.3s ease;
+}
+
+.job:hover {
+  color: $color-white;
+  text-shadow: 1px 2px 1px $color-black;
+  transform: scale(1.1);
+}

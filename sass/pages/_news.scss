@@ -1,0 +1,25 @@
+.news {
+  width: 100%;
+}
+
+.news__wrapper {
+  padding-top: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__heading {
+  font-weight: 400;
+  font-size: 48px;
+  color: $color-black;
+  margin-bottom: 40px;
+}
+
+.news__cards {
+  text-align: left;
+  @media only screen and (max-width: 1024px) {
+    text-align: center;
+  }
+}

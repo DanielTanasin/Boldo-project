@@ -1,0 +1,112 @@
+.email {
+  width: 100%;
+  background-color: $color-white;
+}
+
+.email__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 84px;
+
+  &--two {
+    padding-top: 124px;
+  }
+}
+
+.section-block {
+  background-color: $color-blue-dark;
+  padding: 72px 242px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  @media only screen and (max-width: 1200px) {
+    padding: 72px 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 62px 80px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 45px 60px;
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 40px;
+  }
+}
+
+.b__heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: $color-white;
+  text-align: center;
+  margin-bottom: 48px;
+  z-index: 2;
+  @media only screen and (max-width: 1024px) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: normal;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.input-box {
+  display: flex;
+  @media only screen and (max-width: 600px) {
+    display: block;
+    flex-direction: column;
+  }
+}
+
+.input {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-text;
+  padding: 12px 158px 12px 32px;
+  border-radius: 240px;
+  border: none;
+  margin-right: 24px;
+  transition: all 0.3s ease;
+  @media only screen and (max-width: 900px) {
+    padding: 12px 100px 12px 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px 30px 10px 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    font-size: 16px;
+  }
+}
+
+.teror-box {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  @media only screen and (max-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.teror {
+  width: 100%;
+  opacity: 0.7;
+  @media only screen and (max-width: 1200px) {
+  }
+}

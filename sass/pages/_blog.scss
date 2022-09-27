@@ -1,0 +1,233 @@
+.blog {
+  width: 100%;
+  background-color: $color-white;
+}
+
+.blog.blog-two {
+  background-color: $color-blue-dark;
+}
+
+.blog__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 124px;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__wrapper.blog__wrapper-two {
+  padding: 120px 0;
+}
+.heading-tertiary--white {
+  color: $color-text;
+  margin-bottom: 12px;
+}
+
+.blog__heading {
+  color: $color-black;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 400;
+  margin-bottom: 77px;
+  text-align: center;
+
+  &--white {
+    color: $color-white;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: normal;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.blog__heading.blog__heading--white.blog__heading--white-big {
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 62px;
+  margin-bottom: 84px;
+}
+
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 84px;
+  @media only screen and (max-width: 1024px) {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.blog__card:not(:last-child) {
+  margin-right: 50px;
+  @media only screen and (max-width: 1024px) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.blog__card {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 1024px) {
+    text-align: center;
+    margin: 0px 55px;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    margin: 0px 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.blog-box {
+  margin-bottom: 24px;
+}
+
+.blog__img {
+  width: 100%;
+
+  transition: all 0.6s ease;
+}
+.blog__img:hover,
+.blog__img:focus,
+.blog__img:active {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+
+.category-date {
+  display: flex;
+  margin-bottom: 12px;
+
+  @media only screen and (max-width: 1024px) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+}
+
+.category {
+  color: $color-blue-dark;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 12px;
+  @media only screen and (max-width: 1024px) {
+    text-align: center;
+  }
+}
+.date {
+  font-size: 16px;
+  color: $color-text;
+  font-weight: 400;
+  @media only screen and (max-width: 1024px) {
+    text-align: center;
+  }
+}
+.blog__p {
+  color: $color-black;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 32px;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.blog__user {
+  display: flex;
+  @media only screen and (max-width: 1024px) {
+    margin: 0 auto;
+  }
+}
+
+.blog__user-box {
+  margin-right: 12px;
+}
+
+.blog__img-user {
+  width: 100%;
+}
+
+.blog__user--name {
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-black;
+}
+
+.blog__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-text {
+  display: flex;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
+}
+.blog-text:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.b-heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: $color-white;
+  margin-right: 174px;
+  @media only screen and (max-width: 900px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+
+.b-heading.b-heading--third {
+  margin-right: 160px;
+  @media only screen and (max-width: 900px) {
+    margin-right: 0;
+  }
+}
+
+.b-heading.b-heading--first {
+  margin-right: 206px;
+  @media only screen and (max-width: 900px) {
+    margin-right: 0;
+  }
+}
+
+.green {
+  color: $color-green;
+}
+
+.b-para {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-white;
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,76 @@
+.about-two {
+  width: 100%;
+  background-color: $color-green;
+}
+
+.about-two__wrapper {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and(max-width:900px) {
+    flex-direction: column;
+  }
+}
+
+.about-two__text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  padding-right: 50px;
+  text-align: left;
+  animation: dropDown linear 0.8s;
+
+  @media only screen and(max-width:1200px) {
+    padding-right: 0;
+    margin-right: 50px;
+  }
+  @media only screen and(max-width:900px) {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.heading-tertiary.heading-tertiary--black {
+  color: $color-black;
+}
+.heading-tertiary.heading-tertiary--blue {
+  color: $color-blue-dark;
+}
+
+.about-two__heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: $color-black;
+  transition: all 0.3s ease-in;
+  @media only screen and(max-width:1200px) {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  @media only screen and(max-width:600px) {
+    font-size: 26px;
+    line-height: normal;
+  }
+}
+
+.about-two__heading:hover {
+  text-shadow: 2px 2px 7px $color-black;
+  color: white;
+}
+.about-two__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-black;
+  animation: dropDown linear 0.8s;
+  @media only screen and(max-width:900px) {
+    text-align: center;
+  }
+  @media only screen and(max-width:600px) {
+    line-height: normal;
+  }
+}

@@ -1,0 +1,50 @@
+.btn {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: 2px solid #0a2640;
+  transition: transform 0.5s;
+  @media only screen and(max-width:1250px) {
+    padding: 12px 36px;
+    font-size: 18px;
+  }
+  @media only screen and(max-width:600px) {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 4px 5px $color-blue-dark;
+  border: none;
+  color: $color-green;
+}
+
+.btn--blue {
+  color: $color-white;
+  background-color: $color-blue-dark;
+}
+
+.btn--white {
+  color: $color-blue-dark;
+  background-color: $color-white;
+}
+.btn--green {
+  color: $color-blue-dark;
+  background-color: $color-green;
+  border: none;
+}
+
+.btn--green:hover {
+  color: $color-white;
+}
+
+.nav__btn.nav__btn--green {
+  background-color: $color-green;
+}
+.nav__btn.nav__btn--green:hover {
+  background-color: $color-white;
+  color: $color-blue-dark;
+}

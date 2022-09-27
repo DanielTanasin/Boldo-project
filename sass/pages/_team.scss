@@ -1,0 +1,120 @@
+.team {
+  width: 100%;
+  background-color: $color-white;
+}
+
+.story__wrapper.team__wrapper {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.team__users {
+  margin-top: 52px;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and(max-width:768px) {
+    flex-direction: column;
+  }
+}
+.team__users.team__users--two {
+  margin-bottom: 110px;
+}
+.team__user-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.team__user-box:not(:last-child) {
+  margin-right: 51px;
+
+  @media only screen and(max-width:768px) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+.team__user-box.team__user-box--two:not(:last-child) {
+  margin-right: 76px;
+  @media only screen and(max-width:768px) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.t-user-box {
+  margin-bottom: 24px;
+  @media only screen and(max-width:768px) {
+    margin-bottom: 0;
+  }
+}
+
+.team__img {
+  transition: all 0.6s ease;
+
+  @media only screen and(max-width:1200px) {
+    width: 100%;
+  }
+  @media only screen and(max-width:768px) {
+    width: 50%;
+    filter: blur(0);
+  }
+}
+
+.team__img:hover,
+.team__img:focus {
+  filter: blur(0) drop-shadow($color-blue-dark 5px 3px 10px);
+}
+
+.team__name {
+  font-weight: 400;
+  font-size: 28px;
+  color: $color-black;
+  margin-bottom: 20px;
+  @media only screen and(max-width:768px) {
+    margin-bottom: 0;
+  }
+  @media only screen and(max-width:768px) {
+    font-size: 22px;
+  }
+}
+
+.team__job {
+  font-weight: 400;
+  font-size: 20px;
+  color: $color-text;
+}
+
+.story__heading.story__heading-team {
+  margin-bottom: 56px;
+}
+
+.team__users-two {
+  display: flex;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.team__users-two:not(:last-child) {
+  margin-bottom: 46px;
+}
+
+.team-small-box {
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.team-small-box:not(:last-child) {
+  margin-right: 100px;
+}
+.tsmall-img {
+  margin-right: 24px;
+}
+
+.team-small-box.team-small-box--two {
+  margin-right: 130px;
+}
