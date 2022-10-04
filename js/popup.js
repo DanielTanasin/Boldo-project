@@ -1,4 +1,4 @@
-const link = document.querySelectorAll('.card__link-item');
+const link = document.querySelectorAll('.card__link');
 const overlay = document.querySelector('.overlay');
 const popup = document.querySelector('.popup');
 const btnClosePop = document.querySelector('.close-pop');

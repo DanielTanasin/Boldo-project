@@ -92,9 +92,6 @@
 
 .link {
   text-decoration: none;
-}
-
-.item {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -104,7 +101,16 @@
   transition: all 0.6s ease;
 }
 
-.item:hover {
+.item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-text;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.link:hover {
   color: $color-green;
   transform: scale(1.3);
 }

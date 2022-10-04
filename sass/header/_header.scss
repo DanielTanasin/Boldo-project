@@ -94,8 +94,8 @@
 
 .nav__item {
   list-style: none;
-  @media only screen and (max-width: 600px) {
-    margin: 60px 0;
+  @media only screen and (max-width: 768px) {
+    margin: 80px 0;
   }
 }
 
@@ -121,14 +121,12 @@
   }
   @media only screen and (max-width: 768px) {
     padding-right: 0;
-    margin-bottom: 150px;
     font-size: 50px;
     color: $color-white;
     padding: 0;
   }
   @media only screen and (max-width: 600px) {
     padding-right: 0;
-    margin-bottom: 100px;
     font-size: 40px;
     color: $color-white;
   }
@@ -172,6 +170,7 @@
   @media only screen and (max-width: 768px) {
     font-size: 30px;
     padding: 15px 55px;
+    display: none;
     border: none;
   }
 }
